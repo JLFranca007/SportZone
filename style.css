@@ -88,6 +88,11 @@ nav ul {
     padding: 10px; 
 }
 
+li{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 main{
     max-width: 800px;
     margin: 30px auto;
@@ -151,6 +156,7 @@ table{
     border: 1px solid #ffffff;
     border-radius: 10px;
     border-collapse: collapse;
+
 }
 caption{
     font-size: 2rem;
