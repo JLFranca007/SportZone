@@ -8,14 +8,14 @@
 
 body {
     font-family: "sistem-ui", sans-serif;
-    line-height: 1.5;
+    line-height: 1.8;
     text-align: center;
 }
 
 a{
     color:#fff;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s; 
 }
 
 a:hover {
@@ -68,17 +68,28 @@ h6{
 }
 
 header {
-    background-color: linear-gradient(90deg, #2563eb 3%, #079713 100%);
+    background: linear-gradient(90deg, #2563eb 3%, #079713 100%);
     padding: 10px 10px;
     text-align: center;
 }
 
 nav{
-    background-color:#2563eb;
+    background:linear-gradient(90deg, #2563eb 3%, #079713 100%);
+    position: sticky;
+    top: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px; 
 }
 
 main{
-    max-width: 950px;
+    max-width: 800px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -88,19 +99,58 @@ main>section{
     margin-bottom: 24px;
 }
 
+main>h2{
+    margin-top: 45px;
+}
+
+section>form{
+    padding: 10px 10px;
+}
+
 form{
     display: grid;
     gap: 15px;
 }
 
+form>p{
+    font-size: 0.75rem;
+}
+
 label {
     font-weight: bold;
     color: #1f2937;
+    text-align: left;
+}
+
+
+input, textarea {
+    padding: 15px 10px;
+    border: 0.7px solid #d7d7da;
+    border-radius: 7px;
+}
+
+input:focus, textarea:focus {
+    border-color: #fc8585;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+button{
+    background: linear-gradient(90deg, #2563eb 0%, #079713 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 2px;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 30%;
+    margin-left: 190px;
 }
 
 table{
-    text-align: center;
-
+    background: linear-gradient(90deg, #2563eb 0%, #079713 100%);
+    width: 130%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    border-collapse: collapse;
 }
 caption{
     font-size: 2rem;
@@ -108,8 +158,17 @@ caption{
     text-align: center;
 }
 
-thead{
-    text-align: center;
+thead th{
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+}
+
+tbody td{
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 10px;
+    border: none;
 }
 
 footer {
